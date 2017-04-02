@@ -1,0 +1,9 @@
+#fps-log {
+  position:fixed;
+  top:10px;
+  left:10px;
+  color:red;
+  background-color:gray;
+  font-size:5em;
+  z-index:1000;
+}

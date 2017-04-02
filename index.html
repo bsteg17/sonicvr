@@ -2,14 +2,23 @@
   <head>
     <title>Hello, WebVR! - A-Frame</title>
     <meta name="description" content="Hello, WebVR! - A-Frame">
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="fps.js"></script>
+    <script src="aframe.js"></script>
+    <script src="components/custom_component.js"></script>
   </head>
   <body>
+    <div id="fps-log"></div>
     <a-scene>
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-asset-item id="interior-obj" src="/assets/examples/luxury_house/interior.obj"></a-asset-item>
+      <a-asset-item id="interior-mtl" src="/assets/examples/luxury_house/interior.mtl"></a-asset-item>
+      <!--<a-obj-model src="#interior-obj" mtl="#interior-mtl" scale="0.001 0.001 0.001"></a-obj-model> -->
+      <a-obj-model src="#interior-obj" mtl="#interior-mtl" scale=".1 .1 .1"></a-obj-model>
+      <a-entity custom_component></a-entity>
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
   </body>
