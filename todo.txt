@@ -1,0 +1,4 @@
+1. running
+  a. a bit of acceleration and then low terminal vel
+2. targeting (crosshairs)
+3. homing attack (actual movement)
