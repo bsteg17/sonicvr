@@ -5,7 +5,7 @@ var fpsLogDiv = null;
 
 function fps_tick(time) {
   frames++;
-  if (time > secondBegin + 1000) { 
+  if (time > secondBegin   + 1000) { 
     console.log(frames);
     console.log(fpsLogDiv);
     if (!fpsLogDiv) { fpsLogDiv = document.getElementById("fps-log") }
